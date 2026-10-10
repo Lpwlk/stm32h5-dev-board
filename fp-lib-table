@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "H5Dev")(type "KiCad")(uri "${KIPRJMOD}/Footprints/H5Dev.pretty")(options "")(descr "Project footprints for the STM32H5 vibration dev board"))
+)

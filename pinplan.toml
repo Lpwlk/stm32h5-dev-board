@@ -1,0 +1,262 @@
+# Draft pin allocation for the vibration-sensing STM32H5 dev board.
+# Validate with:  python3 tools/pinplan.py check pinplan.toml
+# Regenerate the HW-SPEC pinout table: python3 tools/pinplan.py table pinplan.toml
+#
+# Part: STM32H563VIT6 (LQFP100, 250 MHz Cortex-M33, 2 MB flash, 640 KB RAM, 10/100 ETH MAC).
+# The RMII pins are fixed by the package: REF_CLK=PA1 MDIO=PA2 MDC=PC1 CRS_DV=PA7
+# RXD0/1=PC4/PC5 TX_EN=PA5 TXD0=PB12 TXD1=PB15. Everything else works around them,
+# which is why the sensor SPI is on SPI4/port E and not SPI1 (PA5/PA7 are taken by RMII).
+
+mcu = "STM32H563VITx"
+reserve = []
+
+# ---- Ethernet RMII + PHY (e.g. LAN8742A, 25 MHz crystal on PHY, PHY drives 50 MHz REF_CLK) ----
+[[pin]]
+pin = "PA1"
+signal = "ETH_REF_CLK"
+net = "RMII_REF_CLK"
+note = "50 MHz from PHY. Keep trace short, series 33R at PHY"
+[[pin]]
+pin = "PA2"
+signal = "ETH_MDIO"
+net = "ETH_MDIO"
+note = "needs 1.5k-10k pull-up"
+[[pin]]
+pin = "PC1"
+signal = "ETH_MDC"
+net = "ETH_MDC"
+[[pin]]
+pin = "PA7"
+signal = "ETH_CRS_DV"
+net = "RMII_CRS_DV"
+[[pin]]
+pin = "PC4"
+signal = "ETH_RXD0"
+net = "RMII_RXD0"
+[[pin]]
+pin = "PC5"
+signal = "ETH_RXD1"
+net = "RMII_RXD1"
+[[pin]]
+pin = "PA5"
+signal = "ETH_TX_EN"
+net = "RMII_TX_EN"
+[[pin]]
+pin = "PB12"
+signal = "ETH_TXD0"
+net = "RMII_TXD0"
+[[pin]]
+pin = "PB15"
+signal = "ETH_TXD1"
+net = "RMII_TXD1"
+[[pin]]
+pin = "PE0"
+signal = "GPIO_OUT"
+net = "PHY_NRST"
+[[pin]]
+pin = "PE3"
+signal = "GPIO_EXTI"
+net = "PHY_INT"
+note = "link up/down interrupt"
+[[pin]]
+pin = "PB5"
+signal = "ETH_PPS_OUT"
+net = "PPS_OUT"
+note = "IEEE1588 pulse-per-second, for multi-board time sync/scope checking"
+
+# ---- microSD, SDMMC1 4-bit ----
+[[pin]]
+pin = "PC8"
+signal = "SDMMC1_D0"
+net = "SD_D0"
+[[pin]]
+pin = "PC9"
+signal = "SDMMC1_D1"
+net = "SD_D1"
+[[pin]]
+pin = "PC10"
+signal = "SDMMC1_D2"
+net = "SD_D2"
+[[pin]]
+pin = "PC11"
+signal = "SDMMC1_D3"
+net = "SD_D3"
+[[pin]]
+pin = "PC12"
+signal = "SDMMC1_CK"
+net = "SD_CLK"
+[[pin]]
+pin = "PD2"
+signal = "SDMMC1_CMD"
+net = "SD_CMD"
+[[pin]]
+pin = "PD3"
+signal = "GPIO_IN"
+net = "SD_CD"
+note = "card-detect switch"
+
+# ---- USB-C, full speed (config, DFU, CDC console, fallback data path) ----
+[[pin]]
+pin = "PA11"
+signal = "USB_DM"
+net = "USB_DM"
+[[pin]]
+pin = "PA12"
+signal = "USB_DP"
+net = "USB_DP"
+[[pin]]
+pin = "PA9"
+signal = "GPIO_IN"
+net = "USB_VBUS_SENSE"
+note = "via divider, 5V-tolerance not assumed"
+
+# ---- Sensors on SPI4 (IIS3DWB primary vibration sensor, IMU second) ----
+[[pin]]
+pin = "PE12"
+signal = "SPI4_SCK"
+net = "SENS_SCK"
+[[pin]]
+pin = "PE13"
+signal = "SPI4_MISO"
+net = "SENS_MISO"
+[[pin]]
+pin = "PE14"
+signal = "SPI4_MOSI"
+net = "SENS_MOSI"
+[[pin]]
+pin = "PE11"
+signal = "SPI4_NSS"
+net = "SENS_A_CS"
+[[pin]]
+pin = "PE15"
+signal = "GPIO_EXTI"
+net = "SENS_A_INT1"
+note = "DRDY/FIFO watermark"
+[[pin]]
+pin = "PE8"
+signal = "GPIO_EXTI"
+net = "SENS_A_INT2"
+[[pin]]
+pin = "PE10"
+signal = "GPIO_OUT"
+net = "SENS_B_CS"
+[[pin]]
+pin = "PE9"
+signal = "GPIO_EXTI"
+net = "SENS_B_INT1"
+
+# ---- Analog inputs for external accelerometer (e.g. ADXL1002) on header ----
+[[pin]]
+pin = "PB0"
+signal = "ADC1_INP9"
+net = "AIN0"
+[[pin]]
+pin = "PB1"
+signal = "ADC1_INP5"
+net = "AIN1"
+
+# ---- Sync ----
+[[pin]]
+pin = "PA0"
+signal = "TIM2_CH1"
+net = "SYNC_IN"
+note = "external trigger / timestamp capture"
+
+# ---- Debug and console ----
+[[pin]]
+pin = "PA13"
+signal = "GPIO"
+net = "SWDIO"
+allow_special = true
+[[pin]]
+pin = "PA14"
+signal = "GPIO"
+net = "SWCLK"
+allow_special = true
+[[pin]]
+pin = "PB3"
+signal = "GPIO"
+net = "SWO"
+allow_special = true
+[[pin]]
+pin = "PD8"
+signal = "USART3_TX"
+net = "VCP_TX"
+[[pin]]
+pin = "PD9"
+signal = "USART3_RX"
+net = "VCP_RX"
+
+# ---- Clocks ----
+[[pin]]
+pin = "PH0"
+signal = "RCC_OSC_IN"
+net = "OSC_IN"
+allow_special = true
+[[pin]]
+pin = "PH1"
+signal = "RCC_OSC_OUT"
+net = "OSC_OUT"
+allow_special = true
+[[pin]]
+pin = "PC14"
+signal = "RCC_OSC32_IN"
+net = "OSC32_IN"
+allow_special = true
+[[pin]]
+pin = "PC15"
+signal = "RCC_OSC32_OUT"
+net = "OSC32_OUT"
+allow_special = true
+
+# ---- User interface (straight to GPIO: the H5 has enough pins, no IO expander needed) ----
+[[pin]]
+pin = "PD10"
+signal = "GPIO_OUT"
+net = "STATUS_LED"
+[[pin]]
+pin = "PD11"
+signal = "GPIO_OUT"
+net = "USR_LED1"
+[[pin]]
+pin = "PD12"
+signal = "GPIO_OUT"
+net = "USR_LED2"
+[[pin]]
+pin = "PD13"
+signal = "GPIO_OUT"
+net = "USR_LED3"
+[[pin]]
+pin = "PC13"
+signal = "GPIO_EXTI"
+net = "USR_SW1"
+[[pin]]
+pin = "PC0"
+signal = "GPIO_EXTI"
+net = "USR_SW2"
+[[pin]]
+pin = "PD4"
+signal = "GPIO_IN"
+net = "DIP1"
+[[pin]]
+pin = "PD5"
+signal = "GPIO_IN"
+net = "DIP2"
+[[pin]]
+pin = "PD6"
+signal = "GPIO_IN"
+net = "DIP3"
+[[pin]]
+pin = "PD7"
+signal = "GPIO_IN"
+net = "DIP4"
+
+# ---- Expansion I2C ----
+[[pin]]
+pin = "PB6"
+signal = "I2C1_SCL"
+net = "EXP_SCL"
+[[pin]]
+pin = "PB7"
+signal = "I2C1_SDA"
+net = "EXP_SDA"

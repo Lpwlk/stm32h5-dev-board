@@ -1,0 +1,165 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "32a39ea4-b179-4c09-9721-817d0177aae9")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 28.575 126.365)
+		(size 34.925 38.735)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "75d7a004-06c6-4410-84a8-0ffd5b006967")
+		(property "Sheetname" "Power"
+			(at 28.575 125.6534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 28.575 165.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H7-pill-hw"
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 192.405 98.425)
+		(size 43.18 63.5)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "968bac09-8a1c-4d1f-9815-80ea7dfdffd3")
+		(property "Sheetname" "Sensors"
+			(at 192.405 97.7134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 192.405 162.5096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H7-pill-hw"
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 28.575 24.765)
+		(size 34.925 95.25)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a71451d0-b62a-4821-b3b5-8fde55b90b6d")
+		(property "Sheetname" "Interfaces"
+			(at 28.575 24.0534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "interfaces.kicad_sch"
+			(at 28.575 120.5996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H7-pill-hw"
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 24.765)
+		(size 50.8 140.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b71686be-23ab-4396-b66a-f0944da1e9a5")
+		(property "Sheetname" "MCU"
+			(at 88.9 24.0534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 88.9 165.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H7-pill-hw"
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

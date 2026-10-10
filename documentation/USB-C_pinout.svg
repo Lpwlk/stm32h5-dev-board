@@ -1,0 +1,121 @@
+<svg width="550" height="200" version="1.1" viewBox="0 0 550 200" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css">
+	text {font-family:Arial,Helvetica,'Liberation Sans',sans-serif;font-weight:bold;font-size:10px;}
+	.y {fill:#ff0;stroke:#000;stroke-miterlimit:10;}
+	.w {fill:none;stroke:#000;stroke-miterlimit:10;}
+	</style>
+	<path d="m490.4 54.835h-430.8c-25.7 0-45.4 19.7-45.4 45.4s19.7 45.4 45.4 45.4h430.9c25.7 0 45.4-19.7 45.4-45.4s-19.8-45.4-45.5-45.4zm0 83.2h-430.8c-21.4 0-37.8-16.4-37.8-37.8s16.4-37.8 37.8-37.8h430.9c21.4 0 37.8 16.4 37.8 37.8-0.1 21.4-16.4 37.8-37.9 37.8z"/>
+	<g>
+		<text x="61" y="15">A1</text>
+		<text x="99" y="15">A2</text>
+		<text x="136" y="15">A3</text>
+		<text x="174" y="15">A4</text>
+		<text x="212" y="15">A5</text>
+		<text x="250" y="15">A6</text>
+		<text x="288" y="15">A7</text>
+		<text x="325" y="15">A8</text>
+		<text x="363" y="15">A9</text>
+		<text x="398" y="15">A10</text>
+		<text x="436" y="15">A11</text>
+		<text x="474" y="15">A12</text>
+	</g>
+	<g>
+		<rect class="w" x="52" y="29" width="30" height="19"/>
+		<rect class="w" x="90" y="29" width="30" height="19"/>
+		<rect class="w" x="128" y="29" width="30" height="19"/>
+		<rect class="w" x="165" y="29" width="30" height="19"/>
+		<rect class="w" x="203" y="29" width="30" height="19"/>
+		<rect class="w" x="241" y="29" width="30" height="19"/>
+		<rect class="w" x="279" y="29" width="30" height="19"/>
+		<rect class="w" x="317" y="29" width="30" height="19"/>
+		<rect class="w" x="354" y="29" width="30" height="19"/>
+		<rect class="w" x="392" y="29" width="30" height="19"/>
+		<rect class="w" x="430" y="29" width="30" height="19"/>
+		<rect class="w" x="468" y="29" width="30" height="19"/>
+	</g>
+	<g>
+		<text x="56" y="42">GND</text>
+		<text x="93" y="42">TX1+</text>
+		<text x="130" y="42">TX1−</text>
+		<text x="167" y="42">VBUS</text>
+		<text x="208" y="42">CC1</text>
+		<text x="250" y="42">D+</text>
+		<text x="287" y="42">D−</text>
+		<text x="318" y="42">SBU1</text>
+		<text x="356" y="42">VBUS</text>
+		<text x="395" y="42">RX2−</text>
+		<text x="432" y="42">RX2+</text>
+		<text x="472" y="42">GND</text>
+	</g>
+	<path d="m275 109.64h221.1c1.1 0 1.9-0.8 1.9-1.9v-15.1c0-1.1-0.8-1.9-1.9-1.9h-442.2c-1.1 0-1.9 0.8-1.9 1.9v15.1c0 1.1 0.8 1.9 1.9 1.9z"/>
+	<g>
+		<rect class="y" x="55" y="88" width="25" height="8"/>
+		<rect class="y" x="93" y="88" width="25" height="8"/>
+		<rect class="y" x="130" y="88" width="25" height="8"/>
+		<rect class="y" x="168" y="88" width="25" height="8"/>
+		<rect class="y" x="206" y="88" width="25" height="8"/>
+		<rect class="y" x="244" y="88" width="25" height="8"/>
+		<rect class="y" x="282" y="88" width="25" height="8"/>
+		<rect class="y" x="319" y="88" width="25" height="8"/>
+		<rect class="y" x="357" y="88" width="25" height="8"/>
+		<rect class="y" x="395" y="88" width="25" height="8"/>
+		<rect class="y" x="433" y="88" width="25" height="8"/>
+		<rect class="y" x="471" y="88" width="25" height="8"/>
+	</g>
+	<g>
+		<rect class="y" x="55" y="105" width="25" height="8"/>
+		<rect class="y" x="93" y="105" width="25" height="8"/>
+		<rect class="y" x="130" y="105" width="25" height="8"/>
+		<rect class="y" x="168" y="105" width="25" height="8"/>
+		<rect class="y" x="206" y="105" width="25" height="8"/>
+		<rect class="y" x="244" y="105" width="25" height="8"/>
+		<rect class="y" x="282" y="105" width="25" height="8"/>
+		<rect class="y" x="319" y="105" width="25" height="8"/>
+		<rect class="y" x="357" y="105" width="25" height="8"/>
+		<rect class="y" x="395" y="105" width="25" height="8"/>
+		<rect class="y" x="433" y="105" width="25" height="8"/>
+		<rect class="y" x="471" y="105" width="25" height="8"/>
+	</g>
+	<g>
+		<rect class="w" x="52" y="154" width="30" height="19"/>
+		<rect class="w" x="90" y="154" width="30" height="19"/>
+		<rect class="w" x="128" y="154" width="30" height="19"/>
+		<rect class="w" x="165" y="154" width="30" height="19"/>
+		<rect class="w" x="203" y="154" width="30" height="19"/>
+		<rect class="w" x="241" y="154" width="30" height="19"/>
+		<rect class="w" x="279" y="154" width="30" height="19"/>
+		<rect class="w" x="317" y="154" width="30" height="19"/>
+		<rect class="w" x="354" y="154" width="30" height="19"/>
+		<rect class="w" x="392" y="154" width="30" height="19"/>
+		<rect class="w" x="430" y="154" width="30" height="19"/>
+		<rect class="w" x="468" y="154" width="30" height="19"/>
+	</g>
+	<g>
+		<text x="56" y="166">GND</text>
+		<text x="92" y="166">RX1+</text>
+		<text x="130" y="166">RX1−</text>
+		<text x="167" y="166">VBUS</text>
+		<text x="205" y="166">SBU2</text>
+		<text x="250" y="166">D−</text>
+		<text x="287" y="166">D+</text>
+		<text x="322" y="166">CC2</text>
+		<text x="356" y="166">VBUS</text>
+		<text x="395" y="166">TX2−</text>
+		<text x="433" y="166">TX2+</text>
+		<text x="472" y="166">GND</text>
+	</g>
+	<g>
+		<text x="58" y="193">B12</text>
+		<text x="96" y="193">B11</text>
+		<text x="134" y="193">B10</text>
+		<text x="174" y="193">B9</text>
+		<text x="212" y="193">B8</text>
+		<text x="250" y="193">B7</text>
+		<text x="288" y="193">B6</text>
+		<text x="325" y="193">B5</text>
+		<text x="363" y="193">B4</text>
+		<text x="401" y="193">B3</text>
+		<text x="439" y="193">B2</text>
+		<text x="476" y="193">B1</text>
+	</g>
+</svg>

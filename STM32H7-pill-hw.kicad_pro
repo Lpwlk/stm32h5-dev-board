@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "STM32h5-pill-hw.kicad_pro",
+    "filename": "STM32H7-pill-hw.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -600,16 +600,8 @@
       "Power"
     ],
     [
-      "b02769d7-09fd-40b1-a2bf-c69f1aa52ba5",
-      "IO pins"
-    ],
-    [
       "968bac09-8a1c-4d1f-9815-80ea7dfdffd3",
       "Sensors"
-    ],
-    [
-      "825297a7-37f6-4191-83d1-3c4b3ed6875d",
-      "User IOs"
     ],
     [
       "a71451d0-b62a-4821-b3b5-8fde55b90b6d",

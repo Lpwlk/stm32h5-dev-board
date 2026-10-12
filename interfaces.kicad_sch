@@ -1356,23 +1356,20 @@
 				)
 			)
 		)
-		(symbol "Connector:Micro_SD_Card"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Connector:Micro_SD_Card_Det1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -16.51 15.24 0)
+				(at -16.51 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Micro_SD_Card"
-				(at 16.51 15.24 0)
+			(property "Value" "Micro_SD_Card_Det1"
+				(at 16.51 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1381,7 +1378,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 29.21 7.62 0)
+				(at 52.07 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1389,8 +1386,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://katalog.we-online.de/em/datasheet/693072010801.pdf"
-				(at 0 0 0)
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110151630_XKB-Connectivity-XKTF-015-N_C381082.pdf"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1398,7 +1395,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Micro SD Card Socket"
+			(property "Description" "Micro SD Card Socket with one card detection pin"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1425,23 +1422,12 @@
 					(hide yes)
 				)
 			)
-			(symbol "Micro_SD_Card_0_1"
-				(rectangle
-					(start -7.62 -9.525)
-					(end -5.08 -10.795)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Micro_SD_Card_Det1_0_1"
 				(rectangle
 					(start -7.62 -6.985)
 					(end -5.08 -8.255)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1452,7 +1438,7 @@
 					(start -7.62 -4.445)
 					(end -5.08 -5.715)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1463,7 +1449,7 @@
 					(start -7.62 -1.905)
 					(end -5.08 -3.175)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1474,7 +1460,7 @@
 					(start -7.62 0.635)
 					(end -5.08 -0.635)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1485,7 +1471,7 @@
 					(start -7.62 3.175)
 					(end -5.08 1.905)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1496,7 +1482,7 @@
 					(start -7.62 5.715)
 					(end -5.08 4.445)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1507,7 +1493,18 @@
 					(start -7.62 8.255)
 					(end -5.08 6.985)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 10.795)
+					(end -5.08 9.525)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1516,7 +1513,7 @@
 				)
 				(polyline
 					(pts
-						(xy 16.51 12.7) (xy 16.51 13.97) (xy -19.05 13.97) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -11.43)
+						(xy 16.51 15.24) (xy 16.51 16.51) (xy -19.05 16.51) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -8.89)
 					)
 					(stroke
 						(width 0.254)
@@ -1528,8 +1525,8 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -11.43) (xy -8.89 8.89) (xy -1.27 8.89) (xy 2.54 12.7) (xy 3.81 12.7) (xy 3.81 11.43)
-						(xy 6.35 11.43) (xy 7.62 12.7) (xy 20.32 12.7) (xy 20.32 -11.43) (xy -8.89 -11.43)
+						(xy -8.89 -8.89) (xy -8.89 11.43) (xy -1.27 11.43) (xy 2.54 15.24) (xy 3.81 15.24) (xy 3.81 13.97)
+						(xy 6.35 13.97) (xy 7.62 15.24) (xy 20.32 15.24) (xy 20.32 -8.89) (xy -8.89 -8.89)
 					)
 					(stroke
 						(width 0.254)
@@ -1540,9 +1537,9 @@
 					)
 				)
 			)
-			(symbol "Micro_SD_Card_1_1"
+			(symbol "Micro_SD_Card_Det1_1_1"
 				(pin bidirectional line
-					(at -22.86 7.62 0)
+					(at -22.86 10.16 0)
 					(length 3.81)
 					(name "DAT2"
 						(effects
@@ -1559,8 +1556,26 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 20.32 -12.7 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
-					(at -22.86 5.08 0)
+					(at -22.86 7.62 0)
 					(length 3.81)
 					(name "DAT3/CD"
 						(effects
@@ -1578,7 +1593,7 @@
 					)
 				)
 				(pin input line
-					(at -22.86 2.54 0)
+					(at -22.86 5.08 0)
 					(length 3.81)
 					(name "CMD"
 						(effects
@@ -1596,7 +1611,7 @@
 					)
 				)
 				(pin power_in line
-					(at -22.86 0 0)
+					(at -22.86 2.54 0)
 					(length 3.81)
 					(name "VDD"
 						(effects
@@ -1614,7 +1629,7 @@
 					)
 				)
 				(pin input line
-					(at -22.86 -2.54 0)
+					(at -22.86 0 0)
 					(length 3.81)
 					(name "CLK"
 						(effects
@@ -1632,7 +1647,7 @@
 					)
 				)
 				(pin power_in line
-					(at -22.86 -5.08 0)
+					(at -22.86 -2.54 0)
 					(length 3.81)
 					(name "VSS"
 						(effects
@@ -1650,7 +1665,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -22.86 -7.62 0)
+					(at -22.86 -5.08 0)
 					(length 3.81)
 					(name "DAT0"
 						(effects
@@ -1668,7 +1683,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -22.86 -10.16 0)
+					(at -22.86 -7.62 0)
 					(length 3.81)
 					(name "DAT1"
 						(effects
@@ -1686,9 +1701,9 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 -15.24 180)
+					(at -22.86 -12.7 0)
 					(length 3.81)
-					(name "SHIELD"
+					(name "DET"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1795,6 +1810,102 @@
 			(symbol "3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MyLib:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name GND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
 					(length 0)
 					(name "~"
 						(effects
@@ -2410,13 +2521,23 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 137.16) (xy 254 137.16)
+			(xy 255.27 137.16) (xy 246.38 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0c4b74aa-f58a-49ed-905b-5c26a11d804a")
+	)
+	(wire
+		(pts
+			(xy 273.05 129.54) (xy 273.05 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1135fba5-5413-4b1a-a33c-861656b4defe")
 	)
 	(wire
 		(pts
@@ -2450,7 +2571,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 127) (xy 254 127)
+			(xy 255.27 127) (xy 246.38 127)
 		)
 		(stroke
 			(width 0)
@@ -2460,7 +2581,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 124.46) (xy 254 124.46)
+			(xy 255.27 124.46) (xy 246.38 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2480,13 +2601,23 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 142.24) (xy 254 142.24)
+			(xy 255.27 142.24) (xy 246.38 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3bdcab44-4de3-4291-851d-656b46d0218c")
+	)
+	(wire
+		(pts
+			(xy 246.38 119.38) (xy 255.27 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3efe74fe-597f-4d99-bed7-b986093d5ab8")
 	)
 	(wire
 		(pts
@@ -2530,7 +2661,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 132.08) (xy 254 132.08)
+			(xy 255.27 132.08) (xy 246.38 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2570,13 +2701,13 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 129.54) (xy 254 129.54)
+			(xy 198.12 119.38) (xy 198.12 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7033739a-7c87-4fe9-a75b-8d96be8a0522")
+		(uuid "767efebb-e165-41ad-8ccf-94f73d280911")
 	)
 	(wire
 		(pts
@@ -2610,7 +2741,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 139.7) (xy 254 139.7)
+			(xy 255.27 139.7) (xy 246.38 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2670,6 +2801,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 119.38) (xy 203.2 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac0bae5-987d-4f4d-8f08-ee1289e3cf3e")
+	)
+	(wire
+		(pts
 			(xy 124.46 172.72) (xy 127 172.72)
 		)
 		(stroke
@@ -2697,6 +2838,16 @@
 			(type default)
 		)
 		(uuid "e3f75032-19b2-427d-b81d-05810298af7d")
+	)
+	(wire
+		(pts
+			(xy 246.38 129.54) (xy 273.05 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e642d8e5-c942-4d89-be70-96057acbbf10")
 	)
 	(wire
 		(pts
@@ -2740,7 +2891,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 134.62) (xy 254 134.62)
+			(xy 267.97 134.62) (xy 246.38 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3115,6 +3266,28 @@
 			)
 		)
 	)
+	(global_label "SD_DTCT"
+		(shape input)
+		(at 255.27 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a95d0184-03a8-4db6-a6ad-f8cf7f5dc560")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.1775 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SD_CLK"
 		(shape input)
 		(at 255.27 132.08 0)
@@ -3182,6 +3355,72 @@
 			(justify left)
 		)
 		(uuid "d4c5e3c3-9238-4ca4-a822-44c02a25dc1d")
+	)
+	(symbol
+		(lib_id "MyLib:GND")
+		(at 198.12 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09682686-6758-4a0f-ba8e-74b661bc9eda")
+		(property "Reference" "#PWR016"
+			(at 198.12 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name GND"
+			(at 198.12 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e73cbb0a-29db-46b9-a165-d6ee100d3f61")
+		)
+		(instances
+			(project "STM32H7-pill-hw"
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "AetherLib:R")
@@ -3318,95 +3557,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Micro_SD_Card")
-		(at 231.14 134.62 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4440ba7e-fd82-4e28-8a8c-1b839b738a0e")
-		(property "Reference" "J2"
-			(at 230.505 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SD_CARD"
-			(at 230.505 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://katalog.we-online.de/em/datasheet/693072010801.pdf"
-			(at 231.14 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Micro SD Card Socket"
-			(at 231.14 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "72dfd63e-e54c-4f60-85cc-70be78c946ea")
-		)
-		(pin "3"
-			(uuid "b00e3256-6624-4962-87cc-71b49ad38a95")
-		)
-		(pin "4"
-			(uuid "17f4fef0-3a49-4cbc-a6ab-fc903a72d75a")
-		)
-		(pin "5"
-			(uuid "9acfb74c-ff0a-43f6-9beb-051aedeea739")
-		)
-		(pin "6"
-			(uuid "6223637a-2248-47be-acd1-745c405828a2")
-		)
-		(pin "1"
-			(uuid "006365bf-a68a-470e-921d-1544713cc019")
-		)
-		(pin "9"
-			(uuid "de5948cc-9c16-4558-a204-29fca8b43b37")
-		)
-		(pin "7"
-			(uuid "5e51943d-2ce6-4013-834c-af0aa5da5596")
-		)
-		(pin "8"
-			(uuid "a5e773d3-4490-4196-9445-2193f8a4e7b6")
-		)
-		(instances
-			(project "STM32H7-pill-hw"
-				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 238.76 72.39 0)
 		(unit 1)
@@ -3467,6 +3617,72 @@
 			(project "STM32H7-pill-hw"
 				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyLib:GND")
+		(at 273.05 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64c674b3-2432-4e55-84ee-c6d31c922a1d")
+		(property "Reference" "#PWR014"
+			(at 273.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name GND"
+			(at 273.05 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf4a89ae-edd7-45b8-849d-dc3c4f6471de")
+		)
+		(instances
+			(project ""
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3867,73 +4083,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MyLib:3V3")
-		(at 267.97 134.62 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad073b71-a03f-4ddf-9a9e-7eb97c6089af")
-		(property "Reference" "#PWR014"
-			(at 264.16 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "3V3"
-			(at 271.78 134.6201 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name 3V3"
-			(at 267.97 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca2320cf-7346-4a97-b6f9-30c3092d2647")
-		)
-		(instances
-			(project "STM32H7-pill-hw"
-				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_ST_STDC14")
 		(at 238.76 49.53 0)
 		(unit 1)
@@ -4034,6 +4183,98 @@
 			(project "STM32H7-pill-hw"
 				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Micro_SD_Card_Det1")
+		(at 223.52 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be84ca87-4acb-4594-b386-416b521b125a")
+		(property "Reference" "J4"
+			(at 222.885 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Micro_SD_Card_Det1"
+			(at 222.885 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110151630_XKB-Connectivity-XKTF-015-N_C381082.pdf"
+			(at 223.52 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Micro SD Card Socket with one card detection pin"
+			(at 223.52 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1683ab38-6246-4339-8d5b-4f3b3335c9f5")
+		)
+		(pin "2"
+			(uuid "b7e51e9e-6337-4045-9db0-c66875f93b5b")
+		)
+		(pin "3"
+			(uuid "41c102e9-438e-4f3d-afe8-bd36465f0890")
+		)
+		(pin "4"
+			(uuid "75480cee-57cd-4725-8aca-c978381a1f80")
+		)
+		(pin "5"
+			(uuid "22b23b93-4245-47cb-a385-05e52073ab53")
+		)
+		(pin "6"
+			(uuid "a6f91783-d2e2-49ef-ba3b-d0a042bdbed8")
+		)
+		(pin "7"
+			(uuid "2f410ece-ff92-46f1-8456-28fb56e69756")
+		)
+		(pin "8"
+			(uuid "5e4bc582-80d5-40e3-8080-239823d0da19")
+		)
+		(pin "9"
+			(uuid "a2c73c32-9ee1-405e-a371-a7e262ab52aa")
+		)
+		(pin "10"
+			(uuid "d901f8a6-9e39-4dc8-9614-5583bee309b9")
+		)
+		(instances
+			(project ""
+				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -4168,73 +4409,6 @@
 			(project "STM32H7-pill-hw"
 				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
 					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 267.97 129.54 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e2fb578e-3f0f-41a7-abf1-4136ed0094a2")
-		(property "Reference" "#PWR016"
-			(at 274.32 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 271.78 129.5401 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 267.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "95f2c4ae-bdc6-4336-9f90-561e8c227241")
-		)
-		(instances
-			(project "STM32H7-pill-hw"
-				(path "/32a39ea4-b179-4c09-9721-817d0177aae9/a71451d0-b62a-4821-b3b5-8fde55b90b6d"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)

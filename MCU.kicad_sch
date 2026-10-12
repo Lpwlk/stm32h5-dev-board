@@ -7637,17 +7637,6 @@
 		)
 		(uuid "ee9429c4-23d6-4108-b1b4-9788fd804168")
 	)
-	(label "NRST"
-		(at 209.55 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f9b4788a-bfc7-4987-a13b-f28674e516bf")
-	)
 	(label "SW_DIP_4"
 		(at 110.49 104.14 0)
 		(fields_autoplaced yes)
@@ -7658,6 +7647,40 @@
 			(justify left bottom)
 		)
 		(uuid "fd051519-df2b-43b3-ae3c-8b685d9c7c77")
+	)
+	(global_label "NRST"
+		(shape input)
+		(at 209.55 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56d4e793-4173-4f4b-a425-307fa138add1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.7872 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "USR_SW_2"
+		(shape input)
+		(at 196.85 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3fabe9c2-950b-42f9-ac39-71d6942f4bf9")
 	)
 	(symbol
 		(lib_id "Device:R_Small")

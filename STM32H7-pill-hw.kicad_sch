@@ -111,6 +111,26 @@
 				(justify left top)
 			)
 		)
+		(pin "USBD-" output
+			(at 63.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9f17b1c9-4407-452e-8994-8aa470a02f3a")
+		)
+		(pin "USBD+" output
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "03063fca-8e80-4182-8a6a-cb4b92e0be35")
+		)
 		(instances
 			(project "STM32H7-pill-hw"
 				(path "/32a39ea4-b179-4c09-9721-817d0177aae9"
